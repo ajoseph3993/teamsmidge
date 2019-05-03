@@ -5,6 +5,7 @@ body{
 
 html{
 	font-family: Raleway;
+	font-size: 1.5vw
 }
 
 .header{
@@ -93,8 +94,10 @@ html{
 	background-color: #3F2B17;
 }
 
-
-
+.leftaligned-text{
+	line-height: 2px;
+	text-align: left;
+}
 
 
 
