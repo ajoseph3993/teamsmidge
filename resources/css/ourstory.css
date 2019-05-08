@@ -2,11 +2,16 @@ body{
 	margin:0px;
 	background-color: #FFFBF5;
 }
-
-html{
-	font-family: arial;
+p{
+	font-size: 1.5rem;
 }
-
+html{
+	font-family: Raleway;
+	font-size: 1vw;
+}
+.marginleftclass{
+	margin-left: 2rem;
+}
 .header{
 	height: 80px;
 	background-color:#48260A;
@@ -36,7 +41,19 @@ html{
 	height:12vw;
 	width: 12vw;
 }
-
+.teamdiv{
+	display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.teamimage{
+	border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 .rotation{
 	display:inline-flex;
 	justify-content:space-around;	
@@ -92,11 +109,12 @@ html{
 	height: 210px;
 	background-color: #3F2B17;
 }
-
-
-
-
-
+.ourstory{
+	vertical-align: middle;
+}
+.break-word{
+	word-wrap: break-word;
+}
 
 
 
