@@ -4,19 +4,37 @@
 	<link rel="shortcut icon" type="image/png" href="./resources/media/images/logo.png"/>
 	<link rel="stylesheet" type="text/css" href="./resources/css/style.css">
 	<title>Locations</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="./resources/css/thing.css">
+
 </head>
+
+
+<script>
+  $(function () {
+    $('#datetimepicker1').datetimepicker();
+ });
+</script>
+
+
 <body>
 	<div class="header">
-		<img class="logo" src="./resources/media/images/logo.png">
+		<img class="logo" src="./resources/media/images/logo.png" style="background-position: top;">
+
+
 		<div class="head-index">
-			<span id="menu">Home</span>
-			<span id="menu">Location</span>
-			<span id="menu">About</span>
-			<span id="menu">Menu</span>
+			<a href="./index.html"><span id="menu">HOME</span></a>
+			<a href="./location.html"><span id="menu">LOCATION</span></a>
+			<a href="./about.html"><span id="menu">ABOUT</span></a>
+			<a href="./menu.html"><span id="menu">MENU</span></a>
 		</div>
 	</div>
-
-	<div class="top-banner" style="background-image: url(./resources/media/images/truck.jpg);"></div>
+	<div class="top-banner" style="background-image: url(./resources/media/images/name.jpg); background-position: 0% 55%;"></div>
 
 	<div style="text-align: center;">	
 		<div style="display: inline-block; margin-top: 30px">
@@ -33,10 +51,7 @@
 	<div style="text-align: center;">
 			<img src="./resources/media/images/truck-icon.png" style="width: 15vw; height: 15vw; margin-bottom: -4vw">
 		<div style="width: 90%; height: 10px; background-color: black; display: inline-block;"></div>
-	</div>
-
-	<img src="./resources/media/images/truck-icon.png" style="width: 150px; height: 150px;">
-	
+	</div>	
 	<div class="body" style="text-align: center; display: flex; justify-content: space-around; margin-top: 3vw">
 		<div style="display: inline-block;">
 			<div style="width: 35vw; height: 20vw">
@@ -59,32 +74,58 @@
 	</div>
 
 	<div class="page-banner" style="background-image: url(./resources/media/images/bros-bw-crop.jpg); background-position: top; margin-top: 3vw"></div>
-	<h1 class="banner-text">We Cater To You</h1>
+	<h1 class="banner-text">We Cater To You</h1>	
+	
 	<div class="body">
-		<div>
-			<h2>We Cater To You</h2>
-			<p>insert text here</p>
-		</div>
-		<dir>
-			<form action="/action_page.php" style="text-align: center;">
-  				<div style="display: flex;">
-  					<div style="display: inline-block;">
-  						<span class="form-text">First name:</span> <input type="text" name="fname"><br>
-  					</div>
-  					<div style="display: inline-block;">
-  						<span class="form-text">Last name:</span> <input type="text" name="lname"><br>
-  					</div>
-  				</div>
-  				<div style="display: flex;">
-  					<div style="display: inline-block;">
-  						<span class="form-text">Last name:</span> <input type="text" name="lname"><br>
-  					</div>
-  				</div>
-  				<input type="submit" value="Submit">
-			</form>
-			<!--insert form here-->
-		</dir>
+		
 	</div>
+
+
+	<div class="container">
+ 				<div class="panel panel-primary" style="border-color:#3F2B17;">
+				    <div class="panel-heading" style="background-color:#3F2B17;">Schedule an Appointment</div>
+				      <div class="panel-body">
+				        <div class="row">
+ 				           <div class="col-md-6">
+ 				              <div class="form-group">
+  				                <label class="control-label">First Name</label>
+  				                <input type="text" class="form-control" name="fname" id="fname">
+   				            </div>
+    				        </div>
+    				        <div class="col-md-6">
+    				           <div class="form-group">
+    				              <label class="control-label">Last Name</label>
+    				              <input type="text" class="form-control" name="lname" id="lname">
+      				         </div>
+      				      </div>
+      				   </div>
+      				   <div class="row">
+       				    	<div class="col-md-6">
+        				    	<div class="form-group">
+        				        	<label class="control-label">Email</label>
+        				        	<input type="text" class="form-control" name="email" id="email">
+        				     	</div>
+       				    	</div>
+        				    <div class='col-md-6'>
+        				       <div class="form-group">
+        				          <label class="control-label">Appointment Time</label>
+        				          <div class='input-group date' id='datetimepicker1'>
+         				            <input type='text' class="form-control" />
+         				            <span class="input-group-addon">
+         				            <span class="glyphicon glyphicon-calendar"></span>
+         				            </span>
+        				          </div>
+        				       </div>
+        				    </div>
+        				</div>
+       					<input type="submit" class="btn btn-primary" value="Submit" style="background-color:#3F2B17;">
+    				</div>
+  				</div>
+	</div>
+	<div class="footer">
+		
+	</div>
+
 </body>
 </html>
 
