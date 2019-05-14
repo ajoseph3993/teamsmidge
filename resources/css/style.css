@@ -26,6 +26,10 @@ p{
 	line-height: 2.5rem;
 }
 
+
+
+
+
 .header{
 	height: 80px;
 	background-color:#4f1e09;
@@ -44,7 +48,7 @@ p{
 #menu{
 	color: white;
 	margin: 1rem;
-	font-size: 14PX;
+	font-size: 12PX;
 }
 
 .head-index{
@@ -66,11 +70,11 @@ p{
 
 .rotation-choice{
 	width: 15vw;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 .rotation-text{
-	padding: 5px
-	margin:0px;
 }
 
 .view-more{
@@ -129,9 +133,74 @@ p{
 }
 
 
+/* ---- tablet nav---- */
+@media only screen and (min-width: 700px) and (max-width:  1024px){
+	p{
+		font-size: 2.3rem;
+		line-height: 3rem;
 
+	}
+	h2{
+		font-size: 3rem;
+	}
+	h1{
+		font-size: 10rem;
+	}
+	.body{
+		margin-left: 7rem; 
+		margin-right: 7rem;
+		display: inline-flex;
+	}
+	#menu{
+		font-size: 14px;
+	}
+	.rotation-choice{
 
+	}
+}
 
+/* ---- mobile ---- */
+@media only screen and (max-width:700px){
+	p{
+		font-size: 4rem;
+		line-height: 4.5rem;
+
+	}
+	h2{
+		font-size: 5rem;
+	}
+	h1{
+		font-size: 10rem;
+	}
+	.body{
+		margin-left: 7rem; 
+		margin-right: 7rem;
+		display: inline-flex;
+	}
+	#menu{
+		font-size: 14px;
+	}
+	.rotation-choice{
+		height:20vw;
+		width: 20vw;
+		margin-bottom: 110px;
+
+	}
+
+	.menu-img{
+	border-radius: 50%;
+	height:20vw;
+	width: 20vw;
+	}
+
+	.rotation{
+	display:inline-flex;
+	justify-content:space-around;	
+	flex-wrap: wrap;
+
+	}
+	
+}
 
 
 
