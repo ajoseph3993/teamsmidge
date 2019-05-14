@@ -21,6 +21,22 @@ h1{
 a{
 	text-decoration: none;
 }
+a:visited { 
+	text-decoration: none; 
+	color:black;
+}
+a:hover { 
+	text-decoration: none; 
+	color:black;
+}
+a:focus { 
+	text-decoration: none; 
+	color:black;
+}
+a:hover, a:active { 
+	text-decoration: none;
+	 color:black;
+}
 
 p{
 	line-height: 2.5rem;
@@ -50,6 +66,15 @@ p{
 	margin: 1rem;
 	font-size: 12PX;
 }
+
+#menu:active{
+	color: rgba(255,255,255,.5);
+}
+
+#menu:hover{
+	color: rgba(255,255,255,.7);
+}
+
 
 .head-index{
 	display: flex;
@@ -132,6 +157,23 @@ p{
 	margin-bottom: 3rem
 }
 
+.beginning-bio{
+	margin-top: 5rem; 
+	margin-bottom: 8rem; 
+	margin-right: 20rem; 
+	margin-left: 20rem; 
+	text-align: center;
+}
+
+.indexmap{
+	width:38vw; 
+	height:22vw;
+}
+
+#justify{
+	justify-content: space-around;
+}
+
 
 /* ---- tablet nav---- */
 @media only screen and (min-width: 700px) and (max-width:  1024px){
@@ -163,18 +205,18 @@ p{
 @media only screen and (max-width:700px){
 	p{
 		font-size: 4rem;
-		line-height: 4.5rem;
+		line-height: 5.5rem;
 
 	}
 	h2{
 		font-size: 5rem;
 	}
 	h1{
-		font-size: 10rem;
+		font-size: 20rem;
 	}
 	.body{
-		margin-left: 7rem; 
-		margin-right: 7rem;
+		margin-left: 1rem; 
+		margin-right: 1rem;
 		display: inline-flex;
 	}
 	#menu{
@@ -182,7 +224,7 @@ p{
 	}
 	.rotation-choice{
 		height:20vw;
-		width: 20vw;
+		width: 35vw;
 		margin-bottom: 110px;
 
 	}
@@ -197,7 +239,34 @@ p{
 	display:inline-flex;
 	justify-content:space-around;	
 	flex-wrap: wrap;
+	margin-bottom: 10px;
 
+	}
+	#space{
+		margin-bottom: 50px;
+		margin-top:;
+	}
+	.banner-text{
+	text-align: center;
+	margin-top: -35rem;
+	margin-bottom: 20rem;
+	color: white;
+	}
+	.beginning-bio{
+	margin-top: 5rem; 
+	margin-bottom: 8rem; 
+	margin-right: 10rem; 
+	margin-left: 10rem; 
+	text-align: center;
+	}
+
+	.indexmap{
+	width:100vw; 
+	height:22vw;
+	}
+
+	#justify{
+				display: none;
 	}
 	
 }
