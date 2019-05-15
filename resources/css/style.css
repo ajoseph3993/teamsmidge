@@ -225,15 +225,31 @@ p{
 	.rotation-choice{
 		height:20vw;
 		width: 35vw;
-		margin-bottom: 110px;
+		margin-bottom: 25vw;
 
 	}
+
+	/*.menu-img{
+	border-radius: 50%;
+	height:100px;
+	width: 100px;
+	display: inline-block;
+	}*/
 
 	.menu-img{
-	border-radius: 50%;
-	height:20vw;
-	width: 20vw;
-	}
+		height: 150%;
+    	width: 85.725%;
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+
+
+
+
+
+
+
 
 	.rotation{
 	display:inline-flex;
