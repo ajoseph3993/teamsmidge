@@ -45,7 +45,9 @@ a:hover, a:active {
 p{
 	line-height: 2.5rem;
 }
-
+#space{
+	margin-bottom: 0rem;
+}
 
 .sfweekly{
 	height: 200px;
@@ -93,10 +95,6 @@ p{
 .head-index{
 	display: flex;
 	margin-right: 10px
-}
-
-#space{
-	margin-bottom: 8rem;
 }
 
 .menu-img{
@@ -418,7 +416,7 @@ p{
 	margin-bottom: 3rem;
 }
 
-#space{
+#space-cider{
 	margin-bottom: 20rem;
 }
 
